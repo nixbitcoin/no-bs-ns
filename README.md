@@ -1,9 +1,10 @@
-# No BS NS
+# No BullShit NameSpaces  
 
-**N**o **B**ull**S**hit **N**ame**S**paces  
 Guides and scripts on how to create network namespaces without bullshit. No MACVLAN, no TAP, no Open vSwitch, no need to know physical interface names. Just `iproute2` (built-in to all Linux distros) and a couple commands.
 
 Network namespaces are connected to a bridge interface via veth paris. Traffic leaves the bridge interface into the default network namespace and is automatically routed via NAT. Everything, including DNS, JustWorks™
+
+Created as notes and educational material for the upcoming nix-bitcoin network namespace refactoring.
 
 Setup in 10 easy steps
 ---
@@ -79,10 +80,10 @@ Setup in 10 easy steps
 
 	```console
 	# iptables \
-		-t nat \
-		-A POSTROUTING \
-		-s 172.18.0.0/24 \
-		-j MASQUERADE
+		  -t nat \
+		  -A POSTROUTING \
+		  -s 172.18.0.0/24 \
+		  -j MASQUERADE
 	# sysctl -w net.ipv4.ip_forward=1
 	```
 
