@@ -126,3 +126,11 @@ Usage example: bitcoind and bitcoin-cli in two different namespaces
 	```console
 	# ip netns exec namespace2 sudo -u <BITCOINUSER> bitcoin-cli -rpcconnect=172.18.0.11 -getinfo
 	```
+
+Resources
+---
+
+1. [Using network namespaces and a virtual switch to isolate servers by cirowrc](https://ops.tips/blog/using-network-namespaces-and-bridge-to-isolate-servers/)
+2. [Introducing Linux Network Namespaces by Scott Lowe](https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/)
+3. [Introduction to Linux interfaces for virtual networking by Red Hat](https://developers.redhat.com/blog/2018/10/22/introduction-to-linux-interfaces-for-virtual-networking/#macvlan)
+4. [Bridge vs Macvlan by Hi Cube](https://hicu.be/bridge-vs-macvlan)
