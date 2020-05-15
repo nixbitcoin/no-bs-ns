@@ -135,3 +135,4 @@ Resources
 2. [Introducing Linux Network Namespaces by Scott Lowe](https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/)
 3. [Introduction to Linux interfaces for virtual networking by Red Hat](https://developers.redhat.com/blog/2018/10/22/introduction-to-linux-interfaces-for-virtual-networking/#macvlan)
 4. [Bridge vs Macvlan by Hi Cube](https://hicu.be/bridge-vs-macvlan)
+5. [Running local services in network namespaces with systemd by Kevin Carter](https://cloudnull.io/2019/04/running-services-in-network-name-spaces-with-systemd/)
